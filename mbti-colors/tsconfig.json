@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",                     // JavaScript 출력 버전
+    "lib": ["dom", "dom.iterable", "esnext"], // 사용할 라이브러리 (DOM 및 최신 JavaScript 기능)
+    "module": "esnext",                     // 모듈 시스템
+    "moduleResolution": "node",            // Node.js 방식의 모듈 탐색
+    "jsx": "react-jsx",                    // React 17+ JSX 변환 설정
+    "strict": true,                        // 엄격한 타입 체크
+    "esModuleInterop": true,               // CommonJS 모듈 호환성
+    "forceConsistentCasingInFileNames": true, // 파일 이름 대소문자 일관성 확인
+    "skipLibCheck": true,                  // 외부 타입 정의 파일 검사 생략
+    "allowSyntheticDefaultImports": true   // default import를 사용할 수 있도록 허용
+  },
+  "include": ["src", "src/custom.d.ts"],                      // 포함할 파일
+  "exclude": ["node_modules"]              // 제외할 파일
+}
